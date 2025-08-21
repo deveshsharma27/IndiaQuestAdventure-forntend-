@@ -6,7 +6,11 @@ IndiaQuest Adventures is a vibrant, responsive web application showcasing Indiaâ
 
 Section-Wise Review
 Header: Implemented position: fixed; top: 0; to keep the header visible. Added .header.scrolled with a darker gradient (linear-gradient(90deg, var(--primary) 0%, var(--dark) 80%)) and shadow (box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3)) when scrolling past 100px, toggled via JavaScript (if (scrollPosition > 100)).
+
 Hero: Added parallax effect by moving the background to .hero:before with background-attachment: fixed and JavaScript (hero.style.backgroundPositionY = \${scrollPosition * 0.5}px`). Ensures content visibility with z-index: 2`.
+
 Gallery: Updated .gallery-overlay to transition text color to --accent-light (orange) on hover (transition: var(--transition), color 0.3s ease), enhancing interactivity.
+
 JavaScript: Consolidated scroll event listener for header and parallax effects, maintaining efficiency. Preserved tabs, mobile menu, and animations.
+
 Other Sections: Verified no regressions in tabs, Leaflet map, or responsive design. Tested across Chrome, Firefox, and mobile devices; all features work smoothly.
